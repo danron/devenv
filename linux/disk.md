@@ -2,6 +2,14 @@
 
 ## LVM
 
+### Common commands
+
+```
+vg<tab>
+lv<tab>
+pv<tab>
+```
+
 ### Resizing a Logaical Volume after increasing the underlying physical size
 
 To check your configuration, use the `lsblk` command:
