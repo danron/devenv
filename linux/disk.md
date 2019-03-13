@@ -10,7 +10,7 @@ lv<tab>
 pv<tab>
 ```
 
-### Resizing a Logaical Volume after increasing the underlying physical size
+### Resizing a Logical Volume after increasing the underlying physical size
 
 To check your configuration, use the `lsblk` command:
 ```
@@ -26,7 +26,7 @@ nvme0n1              259:0    0  100G  0 disk
   └─vg_system-home   253:4    0 12.5G  0 lvm  /home
 ```
 
-Resize the disk `nvme0n1` (in AWS or some other way) and let the logical volume `vg_system-root` use that space:
+Resize the disk `nvme0n1` and let the logical volume `vg_system-root` use that space:
 
 ```
 pvresize /dev/nvme0n1p2
